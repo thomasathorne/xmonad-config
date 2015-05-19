@@ -1,0 +1,18 @@
+# /bin/bash
+
+# run screensaver in background so we can do 'xscreensaver-command
+# -lock'
+
+xscreensaver
+
+# daemonized emacs process launch
+
+emacs --daemon
+
+# keyboard settings
+
+setxkbmap 'gb(dvorak)' -option 'ctrl:nocaps'
+
+# background image
+
+feh --bg-fill ~/.xmonad/wallpaper.jpg
